@@ -32,6 +32,7 @@ btn.addEventListener('click', function() {  //funkce po kliknutí na button "za�
     detaily.style.display = 'flex';
     priklad.style.display = 'flex';
     moznosti.style.display = 'flex';
+    document.getElementById('form_vyber').style.display = 'none';
     });
 function funkce_0nebo1() {   //funkce na vytvoření náhodného čísla od 0 do 1
     return Math.round(Math.random()); 
