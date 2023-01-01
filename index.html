@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Binární kvíz</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+
+</head>
+<body>
+    <main>
+        <!-- Celkové okno  -->
+        <div class="okno">
+            <form id="form_vyber">
+                <input type="radio" id="scitani" name="scitani">
+                <label for="scitani">Sčítání</label><br>
+                <input type="radio" id="odcitani" name="odcitani">
+                <label for="odcitani">Odčítání</label><br>
+                <input type="radio" id="nasobeni" name="nasobeni">
+                <label for="nasobeni">Násobení</label>
+                <input type="radio" id="deleni" name="deleni">
+                <label for="deleni">Dělení</label>
+                <input type="radio" id="nahodne" name="nahodne">
+                <label for="nahodne">Náhodné</label>
+              </form>
+                <button  id="btn">Začít kvíz</button>
+            <!-- Zobrazení správných a špatných 0 a 1  -->
+            <div class="detaily" id="detaily">
+                <h1>Správně: <span id="spravne">-</span></h1>
+                <h1>Špatně: <span id="spatne">-</span></h1>
+                <h1>test: <span id="testvysledek">-</span></h1>
+            </div>
+
+            <!-- Zobrazení příkladu  -->
+            <div class="priklad" id="priklad">
+                <h1 id="zobrazeni_prikladu"> <span id="priklad1"></span>
+                <br>
+                <span id="priklad2"></span>
+                <br>
+                <span id="vysledek"></span>
+                </h1>
+            </div>
+            <!-- Zobrazení možností => 1 a 0  -->
+            <div class="moznosti" id="moznosti">
+                <span>
+                    <input type="button" id="moznost1" class="radio_moznost" value="1" />
+                </span>
+                <span>
+                    <input type="button" id="moznost2" class="radio_moznost" value="0" />
+                </span>
+
+            </div>
+        </div>
+    </main>
+    <script src='script.js'></script>
+</body>
+</html>               
+

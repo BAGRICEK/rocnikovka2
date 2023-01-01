@@ -1,0 +1,104 @@
+/* Styl celého dokumentu */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 900;
+}
+/* Styly hlavní části */
+main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    background-image: url("img/pozadi.jpg");
+    background-size: cover;
+    background-position: center;
+}
+/* Styl okna ve kterém se vše nachází */
+.okno {
+    width: 40rem;
+    height: 30rem;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid blue;
+    border-radius: 35px;
+}
+/* Styly detailů - počet správně a špatně zadaných hodnot */
+.detaily {
+    width: 100%;
+    height: 0.5rem;
+    display: none; /*flex*/
+    justify-content: space-around;
+    align-items: center;
+}
+/* Styl písma h1 detailů */
+.detaily h1 {
+    font-size: 1.2rem;
+}
+/* Styl příkladů */
+.priklad {
+    width: 80%;
+    height: 8rem;
+    display: none; /*flex*/
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+/* Styl písma příkladů */
+.priklad h1 {
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 3px;
+
+}
+/* Podtrhnutí příkladu (provizorní) */
+#priklad2 {
+    border-bottom: 2px solid black;
+}
+
+/* Styl divu ve kterém se nacházejí možnosti 1 a 0 */
+.moznosti {
+    width: 80%;
+    height: 12rem;
+    display: none; /*flex*/
+    align-items: center;
+    justify-content: space-around;
+}
+/* Styly spanu na možnosti 1 a 0 */
+.moznosti span {
+    width: 45%;
+    height: 3rem;
+    border: 2px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+/* Styl buttonu na možnosti 1 a 0 */
+.radio_moznost {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    color: black;
+    transition: transform 0.3s;
+    cursor: pointer;
+    font-size: 2rem;
+}
+/* Animace zvětšení při najetí na button */
+.radio_moznost:hover {
+    -ms-transform: scale(1.12);
+    -webkit-transform: scale(1.12);
+    transform: scale(1.12);
+    color: darkblue;
+}
