@@ -61,7 +61,7 @@ function zapis() {      //funkce na zápis vytvořených čísel do html
 btn_moznost1.addEventListener('click', function() {
     vysledek.textContent+='1';
     if (delka !=vysledek_bin.length) {
-        if (vysledek.textContent.charAt(y)=='1') {
+        if (vysledek_bin.charAt(y)=='1') {
             spravne++;
             document.getElementById('spravne').textContent=spravne;
             y++;
@@ -85,7 +85,7 @@ btn_moznost2.addEventListener('click', function() {
     //vysledek.textContent=vysledek_zapis_pom;
     vysledek.textContent+='0';
     if (delka !=vysledek_bin.length) {
-        if (vysledek.textContent.charAt(y)=='0') {
+        if (vysledek_bin.charAt(y)=='0') {
             spravne++;
             document.getElementById('spravne').textContent=spravne;
             y++;
@@ -97,7 +97,7 @@ btn_moznost2.addEventListener('click', function() {
             y++;
             delka++;
         }
-    } else {
+    } else {                                //vyřešit situaci zadání špatného čísla (zatím to zapíše správně)
         vysledek.style.color = 'green';
         spravne++;
         document.getElementById('spravne').textContent=spravne;
