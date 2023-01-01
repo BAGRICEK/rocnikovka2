@@ -15,7 +15,7 @@ main {
     justify-content: center;
     align-items: center;
     background-color: black;
-    background-image: url("img/pozadi.jpg");
+    background-image: url("pozadi.jpg");
     background-size: cover;
     background-position: center;
 }
