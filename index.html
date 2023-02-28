@@ -12,18 +12,24 @@
     <main>
         <!-- Celkové okno  -->
         <div class="okno">
-<form id="form_vyber">
-  <input type="radio" id="scitani" name="scitani">
-  <label for="scitani">Sčítání</label><br>
-  <input type="radio" id="odcitani" name="odcitani">
-  <label for="odcitani">Odčítání</label><br>
-  <input type="radio" id="nasobeni" name="nasobeni">
-  <label for="nasobeni">Násobení</label>
-  <input type="radio" id="deleni" name="deleni">
-  <label for="deleni">Dělení</label>
-  <input type="radio" id="nahodne" name="nahodne">
-  <label for="nahodne">Náhodné</label>
-</form>
+            <form id="form_vyber">
+                <label class="container">Sčítání  
+                    <input type="radio" name="radio"  id="scitani">  
+                    <span class="check"></span>  
+                  </label>  
+                  <label class="container">Odčítání  
+                    <input type="radio" name="radio"  id="odcitani">  
+                    <span class="check"></span>  
+                  </label>  
+                  <label class="container">Násobení  
+                    <input type="radio" name="radio"  id="nasobeni">  
+                    <span class="check"></span>  
+                  </label>  
+                  <label class="container">Dělení  
+                    <input type="radio" name="radio"  id="deleni">  
+                    <span class="check"></span>  
+                  </label>  
+              </form>
                 <button  id="btn">Začít kvíz</button>
             <!-- Zobrazení správných a špatných 0 a 1  -->
             <div class="detaily" id="detaily">
@@ -36,7 +42,7 @@
             <div class="priklad" id="priklad">
                 <h1 id="zobrazeni_prikladu"> <span id="priklad1"></span>
                 <br>
-                <span id="priklad2"></span>
+                <span id="priklad2">+</span>
                 <br>
                 <span id="vysledek"></span>
                 </h1>
